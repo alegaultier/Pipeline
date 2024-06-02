@@ -10,5 +10,8 @@ WORKDIR /usr/src/app
 # Se instalan las dependencias del archivo 'requirements.txt'
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Exponer el puerto 5000
+EXPOSE 5000
+
 # Se ejecuta el archivo 'main.py' al iniciar el contenedor
 ENTRYPOINT python main.py
