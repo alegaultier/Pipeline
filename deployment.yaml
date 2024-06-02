@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-flask
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: app-flask
+  template:
+    metadata:
+      labels:
+        app: app-flask
+    spec:
+      containers:
+      - name: app-flask
+        image: altabored/app-flask:$BUILD_NUMBER
+        ports:
+        - containerPort: 80

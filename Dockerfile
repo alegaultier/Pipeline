@@ -10,4 +10,5 @@ WORKDIR /usr/src/app
 # Se instalan las dependencias del archivo 'requirements.txt'
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["python", "./main.py"]
+# Se ejecuta el archivo 'main.py' al iniciar el contenedor
+ENTRYPOINT python main.py
