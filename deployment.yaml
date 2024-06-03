@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: app-flask-container
-          image: app-flask:$(Build.BuildId)
+          image: app-flask:$(build.buildid)
           ports:
             - containerPort: 5000
 ---
