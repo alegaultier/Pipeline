@@ -17,7 +17,6 @@ spec:
           image: app-flask:$(Build.BuildId)
           ports:
             - containerPort: 5000
-# service type loadbalancer       
 ---
 apiVersion: v1
 kind: Service
@@ -28,10 +27,10 @@ metadata:
   name: app-flask
 spec:
   ports:
-  - name: http
-    port: 80
-    protocol: TCP
-    targetPort: 5000
+    - name: http
+      port: 80
+      protocol: TCP
+      targetPort: 5000
   type: LoadBalancer
   selector:
     app: app-flask
