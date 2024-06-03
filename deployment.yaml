@@ -15,7 +15,7 @@ spec:
       containers:
       - name: flask
         image: filtrovirgo.azurecr.io/altabored:latest
-        imagePullPolicy: Never
+        imagePullPolicy: Always
         ports:
         - containerPort: 5000
 # service type loadbalancer       
