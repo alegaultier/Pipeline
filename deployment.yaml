@@ -23,7 +23,7 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    name: flask
+    app: flask
     k8s-app: flask
   name: flask
 spec:
