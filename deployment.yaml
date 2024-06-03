@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: flask
-          image: filtrovirgo.azurecr.io/altabored/flask:latest
+          image: filtrovirgo.azurecr.io/altabored:latest
           imagePullPolicy: Never
           ports:
             - containerPort: 5000
@@ -22,7 +22,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: flask-service
+  labels:
+    name: flask
+    k8s-app: flask
+  name: flask
 spec:
   selector:
     app: flask
@@ -31,4 +34,4 @@ spec:
       protocol: TCP
       port: 80
       targetPort: 5000
-  type: LoadBalancer
+    type: LoadBalancer
