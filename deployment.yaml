@@ -13,9 +13,9 @@ spec:
         app: flask
     spec:
       containers:
-        - name: flask-container
+        - name: flask
           image: filtrovirgo.azurecr.io/altabored/flask:latest
-          imagePullPolicy: Always
+          imagePullPolicy: Never
           ports:
             - containerPort: 5000
 ---
