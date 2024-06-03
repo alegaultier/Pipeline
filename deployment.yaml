@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: app-flask-deployment
-          image: altabored/app-flask:#{Build.BuildId}#
+          image: altabored/app-flask:$(Build.BuildId)
           ports:
             - containerPort: 5000
