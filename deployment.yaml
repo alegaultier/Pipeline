@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: flask
-        image: filtrovirgo.azurecr.io/filtrovirgo:latest
+        image: filtrovirgo.azurecr.io/filtrovirgo:1.0.0
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
