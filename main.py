@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    text = 'Oh... ¡Hola, mundo! Esto es una referencia al que tenia Netflix en producción. Me quiero morir, las ganas de llorar son increibles, y más sabiendo que esto sigue fallando.'
+    text = 'Oh... ¡Hola, mundo! Esto es una referencia al que tenia Netflix en producción. Y como costó hacer la referencia, aquí está.'
     return text
 
 if __name__ == '__main__':
