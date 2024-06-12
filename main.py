@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    text = 'esternocleidomastoideo'
+    text = 'Proyectillo miedo terror de Redes de Computadores. Hecho por Alexander Gutiérrez, Anthony Li  y Sebastián Alvaréz. Un poquillo mañoso este proyecto.'
     return text
 
 if __name__ == '__main__':
